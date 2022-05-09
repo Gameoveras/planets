@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bNG-A4-9ga">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gezegenler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ag-II-GDa"/>
+                    <connections>
+                        <segue destination="qOo-1g-ene" kind="modal" modalPresentationStyle="fullScreen" id="Ime-Lc-c5a"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="19" y="180"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JDP-39-3xy">
+            <objects>
+                <viewController id="qOo-1g-ene" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ura-if-cqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="266-l2-Jse"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LW-DR-3zc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="200"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="WKE-Jl-dtY">
+            <objects>
+                <viewController id="bNG-A4-9ga" customClass="HomeViewController" customModule="Gezegenler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUy-A3-CjC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gezegenler Programına Hoşgeldiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTH-kk-MoN">
+                                <rect key="frame" x="20" y="304" width="414" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="6f7-v4-iGK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Earth" translatesAutoresizingMaskIntoConstraints="NO" id="Gtp-UQ-7xw">
+                                <rect key="frame" x="51" y="99" width="312" height="197"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="w3U-aW-FEv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFb-pq-1CE">
+                                <rect key="frame" x="89" y="403" width="237" height="68"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="JlT-Et-swZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="GİRİŞ YAP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.63224301679999995" green="0.74041732220000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <variation key="displayGamut=sRGB-heightClass=regular-userInterfaceIdiom=mac-widthClass=regular">
+                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" modalPresentationStyle="fullScreen" id="bFN-FZ-lvG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yapımcı: Sungu ERDEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXE-Pp-qrP">
+                                <rect key="frame" x="142" y="789" width="384" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="Pjf-AL-Weq"/>
+                                    <constraint firstAttribute="width" constant="384" id="gl8-HR-FLN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ew4-cQ-w2U"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="RFb-pq-1CE" firstAttribute="leading" secondItem="ew4-cQ-w2U" secondAttribute="leading" constant="89" id="3iy-31-LIU"/>
+                            <constraint firstItem="Gtp-UQ-7xw" firstAttribute="centerX" secondItem="MUy-A3-CjC" secondAttribute="centerX" id="Ehk-hQ-rnV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DTH-kk-MoN" secondAttribute="trailing" constant="-40" id="Fzo-Rj-ydF"/>
+                            <constraint firstItem="DTH-kk-MoN" firstAttribute="leading" secondItem="MUy-A3-CjC" secondAttribute="leadingMargin" id="H67-6x-Syi"/>
+                            <constraint firstItem="Gtp-UQ-7xw" firstAttribute="leading" secondItem="ew4-cQ-w2U" secondAttribute="leading" constant="51" id="IvP-0x-Yyd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bXE-Pp-qrP" secondAttribute="bottom" constant="-34" id="KcZ-D0-fEB"/>
+                            <constraint firstItem="DTH-kk-MoN" firstAttribute="top" secondItem="Gtp-UQ-7xw" secondAttribute="bottom" constant="8" id="RTV-OA-YKU"/>
+                            <constraint firstItem="Gtp-UQ-7xw" firstAttribute="top" secondItem="ew4-cQ-w2U" secondAttribute="top" constant="55" id="Xvz-jj-BcC"/>
+                            <constraint firstItem="bXE-Pp-qrP" firstAttribute="leading" secondItem="ew4-cQ-w2U" secondAttribute="leading" constant="142" id="cxh-E8-W3H"/>
+                            <constraint firstItem="RFb-pq-1CE" firstAttribute="top" secondItem="MUy-A3-CjC" secondAttribute="top" constant="403" id="mtS-Ie-2pD"/>
+                            <constraint firstItem="Gtp-UQ-7xw" firstAttribute="centerX" secondItem="RFb-pq-1CE" secondAttribute="centerX" id="zP8-6x-hwD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCO-ff-PHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="-577.23214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earth" width="3000" height="3000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
